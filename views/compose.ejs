@@ -1,0 +1,16 @@
+<%- include('header') %>
+
+<h1> New Blog </h1>
+
+<form action="/compose" method="post">
+    <label for="'blogTitle" class="form-label" > Title </label>
+    <input type="text" class="form-control" name="blogTitle">
+
+    <label for="'blogContent" class="form-label"> Content </label>
+    <textarea  name="blogContent" rows="5" class="form-control"> </textarea>
+
+    <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+
+<%- include('footer') %>
